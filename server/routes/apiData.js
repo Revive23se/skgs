@@ -9,7 +9,7 @@ export function repos(req, res, next) {
     layoutData: {
       title: 'API request example',
       meta: {
-        author: 'Alexey Novak',
+        author: 'Charles Emakpor',
         description: '',
         keywords: '',
         robots: '',
