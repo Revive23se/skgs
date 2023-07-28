@@ -51,10 +51,19 @@
 
       const state = $(this).attr("data-skg-state");
       const action = state === "on" ? $(this).attr("data-skg-state", "off") : $(this).attr("data-skg-state", "on");
+      const device =  $(this).attr("data-skg-device");
+      const act = $(this).attr("data-skg-act");
+
+    
+      if(act === "on"){
+        $(this).attr("data-skg-act", "off");
+      }else {
+        $(this).attr("data-skg-act", "on");
+      }
 
       const data = {
-        test:"yes",
-        ui:"fine"
+        device,
+        act
       };
       return postData({ data });
 
