@@ -1,3 +1,3 @@
 #!/bin/bash
-cd ~/skgs
+cd /home/charles/skgs
 sudo npm start 80
