@@ -54,12 +54,24 @@
       const device =  $(this).attr("data-skg-device");
       const act = $(this).attr("data-skg-act");
 
-    
-      if(act === "on"){
-        $(this).attr("data-skg-act", "off");
-      }else {
-        $(this).attr("data-skg-act", "on");
+      if(device === "motor1" || device === "motor2" ){
+
+        if(act === "forward" ){
+          $(this).attr("data-skg-act", "stop");
+        }else {
+          $(this).attr("data-skg-act", "forward");
+        }        
+      }else{
+
+        if(act === "on" ){
+          $(this).attr("data-skg-act", "off");
+        }else {
+          $(this).attr("data-skg-act", "on");
+        }  
+
       }
+    
+
 
       const data = {
         device,
