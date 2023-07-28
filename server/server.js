@@ -18,7 +18,8 @@ import * as helpers from './utils/hbsHelpers.js';
 const PRODUCTION_MODE = 'production';
 
 let { PORT = 3000 } = process.env;
-const { HOST = 'localhost', TITLE, PID_FILE } = process.env;
+// const { HOST = 'localhost', TITLE, PID_FILE } = process.env;
+const { HOST = '0.0.0.0', TITLE, PID_FILE } = process.env;
 
 const PING = 'ping';
 
