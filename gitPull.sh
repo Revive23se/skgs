@@ -6,6 +6,6 @@ git reset --hard origin/main
 
 git pull
 
-npm install
+# npm install
 
 #npx babel-node installation/db_tables.js 
